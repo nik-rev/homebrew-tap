@@ -1,25 +1,25 @@
 class PatchyBin < Formula
   desc "A tool which makes it easy to declaratively manage personal forks by automatically merging pull requests"
   homepage "https://github.com/NikitaRevenco/patchy"
-  version "1.1.5"
+  version "1.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.1.5/patchy-bin-aarch64-apple-darwin.tar.xz"
-      sha256 "604da3464be9c1ef62f493f9cd14d51bb96912f563c4efbbec9185d64f4cdc72"
+      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.2.0/patchy-bin-aarch64-apple-darwin.tar.xz"
+      sha256 "0b540712ed492863e3e7d466c8a77eb87c8eea6fff598ca5367a9551f5c829ef"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.1.5/patchy-bin-x86_64-apple-darwin.tar.xz"
-      sha256 "d0a69e85273f8a0aeed4f4ab51d8fc454f0339479e99071907d685161854cd8d"
+      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.2.0/patchy-bin-x86_64-apple-darwin.tar.xz"
+      sha256 "ae6f366967d0c35d652db1ec47e7939b65368da0055479af3c3c3ea9cfae3b0b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.1.5/patchy-bin-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f2909713e542c68d36afe272d5dbad128064afe64d85b3f21498ff3856350e4e"
+      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.2.0/patchy-bin-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "42892dd145125c7cbf91d0fb1ed15f9dd67b5e4772973a8780d7a8b5411ed9fb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.1.5/patchy-bin-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2260e1f3d86bb5a361df255fb3e9128afc1509bcadd7d929965a3597de419bbf"
+      url "https://github.com/NikitaRevenco/patchy/releases/download/v1.2.0/patchy-bin-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8c671e67aa490e40bc2a6af2c67776a72d9fe00ce7a8df00851c451a9a66cc62"
     end
   end
   license "MIT"
