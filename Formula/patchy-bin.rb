@@ -1,25 +1,25 @@
 class PatchyBin < Formula
   desc "A tool which makes it easy to declaratively manage personal forks by automatically merging pull requests"
   homepage "https://github.com/nik-rev/patchy"
-  version "1.2.5"
+  version "1.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/patchy/releases/download/v1.2.5/patchy-bin-aarch64-apple-darwin.tar.xz"
-      sha256 "3f854f9957c14e412b3a57372a6a133ce3fc87d48a4a551d360163e6774c8a61"
+      url "https://github.com/nik-rev/patchy/releases/download/v1.2.6/patchy-bin-aarch64-apple-darwin.tar.xz"
+      sha256 "52d4b78f28e80be255a98e63a9175f30049174c1e2c7a59f56cdc9aaa145b863"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/patchy/releases/download/v1.2.5/patchy-bin-x86_64-apple-darwin.tar.xz"
-      sha256 "f7582aff709a8eb02ae533e3e520d782902684b3f59383be13ff0aed9e44ebb9"
+      url "https://github.com/nik-rev/patchy/releases/download/v1.2.6/patchy-bin-x86_64-apple-darwin.tar.xz"
+      sha256 "4917d39e84acd0cc2edef72067aff0614ee19c63dddf3337781da38589f5ffaa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/patchy/releases/download/v1.2.5/patchy-bin-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "be02d876fafaf3b44b3eaec9dbad45357793bffc005de59f639696d15e917a0a"
+      url "https://github.com/nik-rev/patchy/releases/download/v1.2.6/patchy-bin-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "abfe311463b893e3802f0c26e6c1d1ec50c4aa045b6a35a8c627b6058471b5a4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/patchy/releases/download/v1.2.5/patchy-bin-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8db86cbf17c5da379fab0b32ca87efc4920a880e0e30344b5c64c47b570d195a"
+      url "https://github.com/nik-rev/patchy/releases/download/v1.2.6/patchy-bin-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dbfaa84d5e524b1536c4d25c662df61ac9b59f0114c6706535be8e4264d3c6c7"
     end
   end
   license "MIT"
