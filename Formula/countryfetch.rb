@@ -1,20 +1,20 @@
 class Countryfetch < Formula
   desc "A Command-line tool similar to Neofetch for obtaining information about your country"
   homepage "https://github.com/nik-rev/countryfetch"
-  version "0.1.7"
+  version "0.1.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.7/countryfetch-aarch64-apple-darwin.tar.xz"
-      sha256 "5b7416448642ffa6663e59469b31417ba552296932952f4972150a440b3957c4"
+      url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.8/countryfetch-aarch64-apple-darwin.tar.xz"
+      sha256 "314d14a17de447b1979ac57e70eb3e5874aaee37e819784bc758da08e7e4b53f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.7/countryfetch-x86_64-apple-darwin.tar.xz"
-      sha256 "b963c5dc4a76a5bbb354cef92653d23f6257733ef8e3e2228c52004da44963bc"
+      url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.8/countryfetch-x86_64-apple-darwin.tar.xz"
+      sha256 "3dfc05d3f2c848c62f69c973da82bae37be04561993a61001765c63b230a1bb7"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.7/countryfetch-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "26be94a07a7924223c47ddf9b42610ee4a9f0d7f10cae0d0a4a62eaca20072ef"
+    url "https://github.com/nik-rev/countryfetch/releases/download/v0.1.8/countryfetch-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5fc693cf8510b0bba534f5bd8120cde83f954b758112c21875018a66ac4290ab"
   end
   license "MIT"
 
