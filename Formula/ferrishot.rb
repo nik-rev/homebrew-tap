@@ -1,20 +1,20 @@
 class Ferrishot < Formula
   desc "A cross-platform desktop screenshot app"
   homepage "https://github.com/nik-rev/ferrishot"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/ferrishot/releases/download/v0.1.0/ferrishot-aarch64-apple-darwin.tar.xz"
-      sha256 "ece0c2379b4564e96c5a033be469a6207f94019ff69744dee7e0d7b468be0689"
+      url "https://github.com/nik-rev/ferrishot/releases/download/v0.2.0/ferrishot-aarch64-apple-darwin.tar.xz"
+      sha256 "c19f3a8a571109d18a6038b72130dbfb5953fea6e42376d50e58a1933fca412d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/ferrishot/releases/download/v0.1.0/ferrishot-x86_64-apple-darwin.tar.xz"
-      sha256 "0056576608375d9d05307bd4b45f98955db4b7ac990930251c29e2835b3ca66b"
+      url "https://github.com/nik-rev/ferrishot/releases/download/v0.2.0/ferrishot-x86_64-apple-darwin.tar.xz"
+      sha256 "50e878be28f3b43d7c995f20439e0b2c5ab9b526cfebcf6a48f821ac9a73b8cc"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nik-rev/ferrishot/releases/download/v0.1.0/ferrishot-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "3d4b18b4d3c8913afbf6b68ba897eb68e219e101cf5fe749cff822f04e90691b"
+    url "https://github.com/nik-rev/ferrishot/releases/download/v0.2.0/ferrishot-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "b4befbdaeca03e7881985b9568f717631f2a4216bc17f778de8bc64f1f7d241b"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
