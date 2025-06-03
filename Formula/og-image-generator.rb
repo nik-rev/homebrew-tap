@@ -1,20 +1,20 @@
 class OgImageGenerator < Formula
   desc "Pain-free OpenGraph image generation using HTML and CSS for your blog"
   homepage "https://github.com/nik-rev/og-image-generator"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/og-image-generator/releases/download/v0.1.0/og-image-generator-aarch64-apple-darwin.tar.xz"
-      sha256 "ebc462fe6af75fa3ea16e2deb1abc4790c70399d262dbffbd7fcdcd33171966a"
+      url "https://github.com/nik-rev/og-image-generator/releases/download/v0.2.0/og-image-generator-aarch64-apple-darwin.tar.xz"
+      sha256 "30256ce925af489b14441d09fa01ff8584e9196118368b2c3d4237b5015f29b4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/og-image-generator/releases/download/v0.1.0/og-image-generator-x86_64-apple-darwin.tar.xz"
-      sha256 "3ba56be042a37fc9e08abbfe50a7ef90b90acb5e6914c8cf96ba08136cd38b44"
+      url "https://github.com/nik-rev/og-image-generator/releases/download/v0.2.0/og-image-generator-x86_64-apple-darwin.tar.xz"
+      sha256 "79109c23d01eb9d4335d58f8417b4f3a9bf571229938f153daa4908e3c07e803"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nik-rev/og-image-generator/releases/download/v0.1.0/og-image-generator-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "5f4cbb7436706c644a33b6bb3527df89891bd19ae55c79ada8877d6ae65be77c"
+    url "https://github.com/nik-rev/og-image-generator/releases/download/v0.2.0/og-image-generator-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "88085adfd499c2876037c3036ced9f03b4dc3be5d9f49055e4b4399b85af6493"
   end
 
   BINARY_ALIASES = {
