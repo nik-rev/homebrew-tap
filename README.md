@@ -1,3 +1,7 @@
-Software I make which can be installed from this tap.
+Homebrew users can install my software from this tap:
 
-- [Patchy](https://github.com/NikitaRevenco/patchy): A tool which makes it easy to declaratively manage personal forks by automatically merging pull requests
+```sh
+brew install nik-rev/tap/$NAME
+```
+
+Where `$NAME` is name of the program you want to install (found in [`Formula`](./Formula)), without `.rb` file extension
