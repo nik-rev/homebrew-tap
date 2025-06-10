@@ -1,10 +1,10 @@
 class BrightnessCli < Formula
   desc "A program to read and control device brightness"
   homepage "https://github.com/nik-rev/brightness-cli"
-  version "0.1.1"
+  version "0.1.2"
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nik-rev/brightness-cli/releases/download/v0.1.1/brightness-cli-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f33d2e9c97b8ca2208e884f9eb78e5918ca113567132435aa0a42f1aa1352caa"
+    url "https://github.com/nik-rev/brightness-cli/releases/download/v0.1.2/brightness-cli-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "7f9a1d3965c68646d4bce3d8d9c8dec5394cd3544e9b568657e5a3dd8bf55e77"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
