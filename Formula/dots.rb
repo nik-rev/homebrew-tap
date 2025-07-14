@@ -1,25 +1,25 @@
 class Dots < Formula
   desc "A cozy, simple-to-use dotfiles manager"
   homepage "https://github.com/nik-rev/dots"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/dots/releases/download/v0.1.0/dots-aarch64-apple-darwin.tar.xz"
-      sha256 "9ea26186e459711c104720acf6ab7e0df9c164a4015bcbd92fb5b4855081d32e"
+      url "https://github.com/nik-rev/dots/releases/download/v0.2.0/dots-bin-aarch64-apple-darwin.tar.xz"
+      sha256 "40f2fd2d220bbb2875735a3e312ec89869e9221be4a3697920eb9ba089d07734"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/dots/releases/download/v0.1.0/dots-x86_64-apple-darwin.tar.xz"
-      sha256 "7c5424d8811ed733b1552ea3a8042fb14e7163d7243bf00853ccfdc779d46bcf"
+      url "https://github.com/nik-rev/dots/releases/download/v0.2.0/dots-bin-x86_64-apple-darwin.tar.xz"
+      sha256 "ae9c5a4795186479ebeffe169a4e724b599791279b8088c981afeaccbb00779d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nik-rev/dots/releases/download/v0.1.0/dots-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9599f75d5b9ed13f76783408868ef8d792a4a6ffae93049c81f565a395560c85"
+      url "https://github.com/nik-rev/dots/releases/download/v0.2.0/dots-bin-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7e6003318cd38ffc498c6cab9c98389d86fc8138ce94d79de71c9df2df6353e7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nik-rev/dots/releases/download/v0.1.0/dots-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "95d9b03c5df946744b232618727420e5995b470b81dce4fac33b6c1235fa79ff"
+      url "https://github.com/nik-rev/dots/releases/download/v0.2.0/dots-bin-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "44f6d142b6c3cc11d2f6c8e647d7ea8c639b74f7a9638a053382b47f8d64c7a1"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -50,10 +50,10 @@ class Dots < Formula
   end
 
   def install
-    bin.install "dots" if OS.mac? && Hardware::CPU.arm?
-    bin.install "dots" if OS.mac? && Hardware::CPU.intel?
-    bin.install "dots" if OS.linux? && Hardware::CPU.arm?
-    bin.install "dots" if OS.linux? && Hardware::CPU.intel?
+    bin.install "dots-bin" if OS.mac? && Hardware::CPU.arm?
+    bin.install "dots-bin" if OS.mac? && Hardware::CPU.intel?
+    bin.install "dots-bin" if OS.linux? && Hardware::CPU.arm?
+    bin.install "dots-bin" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
